@@ -16,11 +16,11 @@ function App() {
   return (
     <BrowserRouter>
       <ToastContainer position="bottom-right" />
-      <div className="container">
+      <main className="container">
         <div>
           <Sidebar />
         </div>
-        <div className="wrapper">
+        <section className="wrapper">
           <Navbar />
           <Routes>
             <Route path="/" element={<Dashboard />} />
@@ -31,8 +31,8 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="*" element={<NotFoundError />} />
           </Routes>
-        </div>
-      </div>
+        </section>
+      </main>
     </BrowserRouter>
   );
 }
