@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { login, reset } from "../../features/auth/authSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
-
+import signUp from "../../assets/signUp.webp";
 const SignIn = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -55,7 +55,9 @@ const SignIn = () => {
         <p className="loading">Loading...</p>
       ) : (
         <div className="register__container">
-          <div className="left"></div>
+          <div className="left">
+            <img src={signUp} alt="" />
+          </div>
           <div className="right">
             <div>
               <h1>Sign In</h1>
