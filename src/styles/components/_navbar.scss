@@ -1,0 +1,47 @@
+.nav {
+  background-color: $box;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+span {
+  margin-left: 20px;
+}
+
+.input {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid grey;
+  > input {
+    background-color: transparent;
+    border: none;
+    color: $text;
+    width: 100%;
+    outline: none;
+  }
+  > input::placeholder {
+    color: $text;
+  }
+}
+
+span {
+  cursor: pointer;
+  > a {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.search {
+  margin-right: 10px;
+  margin-top: 5px;
+}
