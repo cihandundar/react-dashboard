@@ -1,0 +1,38 @@
+.cart {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  &__box {
+    background-color: $box;
+    width: 23%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    &__text {
+      p {
+        color: $textSoft;
+        font-size: 13px;
+        margin-bottom: 8px;
+      }
+    }
+    &__rating {
+      display: flex;
+      align-items: center;
+    }
+    &__icon {
+      > span {
+        background-color: rgb(0, 115, 255);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        justify-content: center;
+      }
+    }
+  }
+}
