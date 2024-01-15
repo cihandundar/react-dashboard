@@ -1,0 +1,21 @@
+.aside {
+  width: 250px;
+  padding: 20px;
+  background-color: $box;
+  height: 100vh;
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    > h1 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-left: 10px;
+    }
+  }
+  &__list {
+    &__link {
+      margin-bottom: 20px;
+    }
+  }
+}

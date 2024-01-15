@@ -1,3 +1,12 @@
+$bg: #011f4b;
+$text: #fff;
+$box: #03396c;
+$textSoft: #dddddd;
+
+@import "./globals/";
+@import "./components/";
+@import "./pages/";
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap");
 
 * {
@@ -12,12 +21,21 @@ a {
   color: #fff;
 }
 
-$bg: #011f4b;
-$text: #fff;
-$box: #03396c;
-$textSoft: #dddddd;
+li {
+  list-style-type: none;
+}
 
 body {
   background-color: $bg;
   color: $text;
+}
+
+.container {
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
 }
