@@ -18,7 +18,24 @@
   }
   &__list {
     &__link {
+      font-size: 20px;
       margin-bottom: 20px;
     }
   }
+}
+
+.active {
+  display: inline-block;
+  width: 100%;
+
+  border-radius: 8px;
+  background: $textSoft;
+  color: $box;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
 }
