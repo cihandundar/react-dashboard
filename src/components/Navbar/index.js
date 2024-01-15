@@ -16,7 +16,9 @@ const Navbar = () => {
         </div>
         <span>
           <Link to="/">
-            <CgProfile />
+            <span className="profile-icon">
+              <CgProfile />
+            </span>
             Sign In
           </Link>
         </span>
