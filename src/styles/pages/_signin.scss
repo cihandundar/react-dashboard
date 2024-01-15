@@ -1,0 +1,52 @@
+.register {
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+}
+.left {
+  > img {
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.right {
+  padding: 30px;
+  > div {
+    > h1 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.form {
+  &__group {
+    > input {
+      width: 400px;
+      padding: 20px;
+      background-color: transparent;
+      border: 2px solid grey;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      color: $text;
+      outline: none;
+    }
+
+    > button {
+      width: 100%;
+      padding: 20px;
+      border-radius: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background-color: $box;
+      border: none;
+      color: $text;
+      cursor: pointer;
+    }
+  }
+}
