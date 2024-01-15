@@ -53,11 +53,11 @@ const Sidebar = () => {
             </li>
           </ul>
         ) : (
-          <ul>
-            <li>
+          <ul className="aside__list">
+            <li className="aside__list__link">
               <NavLink to="/signin">Sign In</NavLink>
             </li>
-            <li>
+            <li className="aside__list__link">
               <NavLink to="/signup">Sign Up</NavLink>
             </li>
           </ul>
