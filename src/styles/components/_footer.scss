@@ -1,0 +1,23 @@
+.footer {
+  margin-top: 20px;
+  &__container {
+    padding: 20px;
+    width: 100%;
+    background-color: $box;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__right {
+    &__list {
+      display: flex;
+      > li:not(:last-child) {
+        margin-right: 20px;
+      }
+      > li {
+        cursor: pointer;
+      }
+    }
+  }
+}
