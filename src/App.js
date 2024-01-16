@@ -4,7 +4,7 @@ import {
   Dashboard,
   NotFoundError,
   Profile,
-  Login,
+  SignIn,
   SignUp,
   Tables,
 } from "./pages";
@@ -24,7 +24,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/tables" element={<Tables />} />
             <Route path="/billing" element={<Billing />} />
