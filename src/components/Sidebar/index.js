@@ -8,9 +8,9 @@ const Sidebar = () => {
 
   const { user } = useSelector((state) => state.auth);
 
-  const onLogout = () => {
-    dispatch(logout());
-    dispatch(reset());
+  const onLogout = async () => {
+    await dispatch(logout());
+    await dispatch(reset());
     navigate("/signin");
   };
 
