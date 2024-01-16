@@ -1,4 +1,4 @@
-import { Cart, RateChart } from "components";
+import { Cart, Chart, RateChart } from "components";
 import React from "react";
 
 const Dashboard = () => {
@@ -8,6 +8,7 @@ const Dashboard = () => {
         <div className="dashbord__container__top">
           <Cart />
           <RateChart />
+          <Chart />
         </div>
       </div>
     </div>
