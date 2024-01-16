@@ -4,7 +4,7 @@ import { login, reset } from "../../features/auth/authSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import signUp from "../../assets/signUp.webp";
-const SignIn = () => {
+const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const isLoading = useSelector((state) => state?.post?.isLoading);
@@ -99,4 +99,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default Login;
