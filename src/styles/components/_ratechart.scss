@@ -14,7 +14,7 @@
   background-size: cover;
   background-position: center;
   height: 300px;
-  width: 450px;
+  width: 100%;
   border-radius: 10px;
   &__text {
     > p {
@@ -29,7 +29,7 @@
 }
 
 .satisfaction {
-  width: 300px;
+  width: 100%;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -91,7 +91,7 @@
 
 .tracking {
   background-color: $box;
-  width: 400px;
+  width: 100%;
   padding: 20px;
   border-radius: 10px;
   display: flex;
