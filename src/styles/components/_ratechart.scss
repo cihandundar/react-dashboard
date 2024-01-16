@@ -1,0 +1,133 @@
+.ratechart {
+  margin-top: 20px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
+
+.mark {
+  padding-top: 30px;
+  padding-left: 30px;
+  background-image: url("../../assets/jellyFish.webp");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 450px;
+  border-radius: 10px;
+  &__text {
+    > p {
+      color: $textSoft;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.soft {
+  color: $textSoft;
+}
+
+.satisfaction {
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-color: $box;
+  padding: 20px;
+  &__title {
+    margin-bottom: 10px;
+    text-align: left;
+    > h2 {
+      font-size: 1.2rem;
+    }
+    > p {
+      font-size: 14px;
+      color: $textSoft;
+    }
+  }
+  &__center {
+    position: relative;
+    > svg {
+      position: absolute;
+      top: 30%;
+      right: 45%;
+    }
+  }
+  &__rating {
+    display: flex;
+    align-items: center;
+    margin-top: -90px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-color: $bg;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    > p {
+      color: $textSoft;
+    }
+    &__center {
+      text-align: center;
+      > h4 {
+        font-size: 2rem;
+      }
+      > p {
+        color: $textSoft;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.rateChart {
+  > svg {
+    width: 200px;
+  }
+}
+
+.tracking {
+  background-color: $box;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__title {
+    > h2 {
+      font-size: 1.2rem;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__left {
+      &__box {
+        background-color: $bg;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        > p {
+          color: $textSoft;
+        }
+      }
+    }
+    &__right {
+      position: relative;
+      &__text {
+        position: absolute;
+        top: 30%;
+        right: 30%;
+        text-align: center;
+        > p {
+          color: $textSoft;
+        }
+      }
+    }
+  }
+}
