@@ -1,4 +1,4 @@
-import { Navbar, Sidebar } from "components";
+import { Footer, Navbar, Sidebar } from "components";
 import {
   Billing,
   Dashboard,
@@ -31,6 +31,7 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="*" element={<NotFoundError />} />
           </Routes>
+          <Footer />
         </section>
       </main>
     </BrowserRouter>
