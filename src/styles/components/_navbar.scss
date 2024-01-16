@@ -9,11 +9,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    &__item {
+      margin-left: 20px;
+    }
   }
-}
-
-span {
-  margin-left: 20px;
 }
 
 .input {
