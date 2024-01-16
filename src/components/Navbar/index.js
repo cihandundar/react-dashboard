@@ -14,18 +14,18 @@ const Navbar = () => {
           </span>
           <input type="text" placeholder="Type here..." />
         </div>
-        <span>
-          <Link to="/">
+        <span className="nav__container__item">
+          <Link to="#">
             <span className="profile-icon">
               <CgProfile />
             </span>
             Sign In
           </Link>
         </span>
-        <span>
+        <span className="nav__container__item">
           <IoSettingsSharp />
         </span>
-        <span>
+        <span className="nav__container__item">
           <FaBell />
         </span>
       </div>
