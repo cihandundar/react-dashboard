@@ -16,7 +16,7 @@ export const fetchUser = createAsyncThunk("fetchUser", async () => {
 });
 
 const userSlice = createSlice({
-  name: "users",
+  name: "items",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
