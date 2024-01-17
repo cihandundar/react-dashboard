@@ -1,0 +1,118 @@
+.payment {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &__wrapper {
+      display: flex;
+      gap: 30px;
+    }
+    &__vision {
+      width: 400px;
+      padding: 20px;
+      border-radius: 10px;
+      background-image: url(../../assets//cardBackground.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__bottom {
+        margin-top: 30px;
+      }
+    }
+
+    &__credit {
+      width: 400px;
+      padding: 20px;
+      background-color: $box;
+      border-radius: 10px;
+      &__top {
+        background-color: $bg;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &__bottom {
+        margin-top: 30px;
+        &__title {
+          > p {
+            font-size: 12px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+          }
+        }
+        &__info {
+          display: flex;
+          justify-content: space-between;
+        }
+        &__left {
+          display: flex;
+          align-items: center;
+          &__icon {
+            border-radius: 50%;
+            background-color: $bg;
+            padding: 10px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.flexColumnWrapper {
+  display: flex;
+  margin-top: 30px;
+}
+
+.flexColumn:not(:last-child) {
+  margin-right: 30px;
+}
+
+.method {
+  border-radius: 10px;
+  width: 830px;
+  padding: 20px;
+  background-color: $box;
+  &__container {
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      > h2 {
+        font-weight: 900;
+      }
+      > button {
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: $bg;
+        color: $text;
+        cursor: pointer;
+      }
+    }
+    &__bottom {
+      margin-top: 30px;
+      display: flex;
+      gap: 10px;
+      justify-content: space-around;
+      &__input {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+        border: 1px solid $textSoft;
+        border-radius: 10px;
+        &__icon {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
