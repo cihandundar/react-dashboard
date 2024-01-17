@@ -30,7 +30,7 @@ const Sidebar = () => {
               fill="white"
             ></path>
           </svg>
-          <h1>Logo</h1>
+          <h1>WARCRAFT</h1>
         </div>
         {user ? (
           <ul className="aside__list">
