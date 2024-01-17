@@ -2,7 +2,7 @@ import { fetchUser } from "features/users/userSlice";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 const AuthorsTable = () => {
-  const users = useSelector((state) => state?.users?.item);
+  const items = useSelector((state) => state?.items?.item);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const AuthorsTable = () => {
             </tr>
           </thead>
           <tbody className="tbodyWrapper">
-            {users?.map((userItem) => (
+            {items?.map((userItem) => (
               <tr key={userItem?.id}>
                 <td>
                   <div className="tableTitle">
