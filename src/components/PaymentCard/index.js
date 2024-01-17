@@ -1,5 +1,6 @@
 import React from "react";
 import graph from "../../assets/graph.svg";
+import Invoices from "components/Invoices";
 const PaymentCard = () => {
   return (
     <div className="payment">
@@ -169,6 +170,9 @@ const PaymentCard = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <Invoices />
       </div>
     </div>
   );
