@@ -20,6 +20,12 @@
     &__link {
       font-size: 20px;
       margin-bottom: 20px;
+      &__icon {
+        background-color: $box;
+        padding: 8px;
+        border-radius: 10px;
+        margin-inline: 10px;
+      }
     }
   }
 }

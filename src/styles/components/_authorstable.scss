@@ -1,0 +1,27 @@
+.tableTitle {
+  display: flex;
+  align-items: center;
+}
+
+.tableWrapper {
+  display: flex;
+  flex-direction: column;
+  > p {
+    color: $textSoft;
+    font-size: 13px;
+  }
+}
+
+.tableAvatar img {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.tbodyWrapper {
+  > tr {
+    > td {
+      font-size: 14px;
+    }
+  }
+}
