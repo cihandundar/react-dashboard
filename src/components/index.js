@@ -4,5 +4,17 @@ import Cart from "./Cart";
 import RateChart from "./RateChart";
 import Chart from "./Chart";
 import ProjectsTable from "./ProjectsTable";
+import AuthorsTable from "./AuthorsTable";
+import PaymentCard from "./PaymentCard";
 import Footer from "./Footer";
-export { Navbar, Sidebar, Cart, RateChart, Chart, ProjectsTable, Footer };
+export {
+  Navbar,
+  Sidebar,
+  Cart,
+  RateChart,
+  Chart,
+  ProjectsTable,
+  AuthorsTable,
+  PaymentCard,
+  Footer,
+};
