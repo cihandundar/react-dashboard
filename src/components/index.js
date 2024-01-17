@@ -6,6 +6,7 @@ import Chart from "./Chart";
 import ProjectsTable from "./ProjectsTable";
 import AuthorsTable from "./AuthorsTable";
 import PaymentCard from "./PaymentCard";
+import Invoices from "./Invoices";
 import Footer from "./Footer";
 export {
   Navbar,
@@ -16,5 +17,6 @@ export {
   ProjectsTable,
   AuthorsTable,
   PaymentCard,
+  Invoices,
   Footer,
 };
