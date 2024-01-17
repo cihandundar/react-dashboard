@@ -6,14 +6,14 @@ const Sidebar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const { user } = useSelector((state) => state.auth);
+  const user = useSelector((state) => state.auth);
 
   const onLogout = async () => {
     await dispatch(logout());
     await dispatch(reset());
     navigate("/signin");
   };
-
+  console.log(user?.user);
   return (
     <aside className="aside">
       <div className="aside__container">
@@ -32,7 +32,7 @@ const Sidebar = () => {
           </svg>
           <h1>WARCRAFT</h1>
         </div>
-        {user ? (
+        {user?.user ? (
           <ul className="aside__list">
             <li className="aside__list__link">
               <NavLink to="/">
