@@ -1,14 +1,17 @@
 .payment {
+  display: flex;
+  gap: 30px;
   &__container {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 30px;
     &__wrapper {
       display: flex;
       gap: 30px;
     }
     &__vision {
-      width: 400px;
+      width: 100%;
       padding: 20px;
       border-radius: 10px;
       background-image: url(../../assets//cardBackground.webp);
@@ -26,7 +29,7 @@
     }
 
     &__credit {
-      width: 400px;
+      width: 100%;
       padding: 20px;
       background-color: $box;
       border-radius: 10px;
@@ -78,7 +81,7 @@
 
 .method {
   border-radius: 10px;
-  width: 830px;
+  width: 100%;
   padding: 20px;
   background-color: $box;
   &__container {
