@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { login, reset } from "../../features/auth/authSlice";
+import { useNavigate, useLocation } from "react-router-dom";
+import { login } from "../../features/auth/authSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import signUp from "../../assets/signUp.webp";
@@ -8,7 +8,8 @@ const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const isLoading = useSelector((state) => state?.post?.isLoading);
-
+  const { state } = useLocation();
+  const previousPath = state?.from ? state.from : "/";
   const { user, isError, isSuccess, message } = useSelector(
     (state) => state.auth
   );
@@ -43,10 +44,8 @@ const Login = () => {
     }
 
     if (isSuccess || user) {
-      navigate("/");
+      navigate(previousPath);
     }
-
-    dispatch(reset());
   }, [user, isError, isSuccess, message, navigate, dispatch]);
 
   return (
