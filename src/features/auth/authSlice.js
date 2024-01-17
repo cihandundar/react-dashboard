@@ -10,7 +10,7 @@ const initialState = {
   isLoading: false,
   message: "",
 };
-
+console.log(user);
 export const authSlice = createSlice({
   name: "authSlice",
   initialState,
