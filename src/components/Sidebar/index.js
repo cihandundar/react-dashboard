@@ -35,16 +35,85 @@ const Sidebar = () => {
         {user ? (
           <ul className="aside__list">
             <li className="aside__list__link">
-              <NavLink to="/">Dashboard</NavLink>
+              <NavLink to="/">
+                <span className="aside__list__link__icon">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    color="inherit"
+                    height="15px"
+                    width="15px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={{ color: "inherit;" }}
+                  >
+                    <path d="M261.56 101.28a8 8 0 00-11.06 0L66.4 277.15a8 8 0 00-2.47 5.79L63.9 448a32 32 0 0032 32H192a16 16 0 0016-16V328a8 8 0 018-8h80a8 8 0 018 8v136a16 16 0 0016 16h96.06a32 32 0 0032-32V282.94a8 8 0 00-2.47-5.79z"></path>
+                    <path d="M490.91 244.15l-74.8-71.56V64a16 16 0 00-16-16h-48a16 16 0 00-16 16v32l-57.92-55.38C272.77 35.14 264.71 32 256 32c-8.68 0-16.72 3.14-22.14 8.63l-212.7 203.5c-6.22 6-7 15.87-1.34 22.37A16 16 0 0043 267.56L250.5 69.28a8 8 0 0111.06 0l207.52 198.28a16 16 0 0022.59-.44c6.14-6.36 5.63-16.86-.76-22.97z"></path>
+                  </svg>
+                </span>
+                Dashboard
+              </NavLink>
             </li>
             <li className="aside__list__link">
-              <NavLink to="/tables">Tables</NavLink>
+              <NavLink to="/tables">
+                <span className="aside__list__link__icon">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    color="inherit"
+                    height="15px"
+                    width="15px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={{ color: "inherit;" }}
+                  >
+                    <path d="M104 496H72a24 24 0 01-24-24V328a24 24 0 0124-24h32a24 24 0 0124 24v144a24 24 0 01-24 24zm224 0h-32a24 24 0 01-24-24V232a24 24 0 0124-24h32a24 24 0 0124 24v240a24 24 0 01-24 24zm112 0h-32a24 24 0 01-24-24V120a24 24 0 0124-24h32a24 24 0 0124 24v352a24 24 0 01-24 24zm-224 0h-32a24 24 0 01-24-24V40a24 24 0 0124-24h32a24 24 0 0124 24v432a24 24 0 01-24 24z"></path>
+                  </svg>
+                </span>
+                Tables
+              </NavLink>
             </li>
             <li className="aside__list__link">
-              <NavLink to="/billing">Billing</NavLink>
+              <NavLink to="/billing">
+                <span className="aside__list__link__icon">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 16 16"
+                    color="inherit"
+                    height="15px"
+                    width="15px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={{ color: "inherit;" }}
+                  >
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0V4zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7H0zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1z"></path>
+                  </svg>
+                </span>
+                Billing
+              </NavLink>
             </li>
             <li className="aside__list__link">
-              <NavLink to="/profile">Profile</NavLink>
+              <NavLink to="/profile">
+                <span className="aside__list__link__icon">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 16 16"
+                    color="inherit"
+                    height="15px"
+                    width="15px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={{ color: "inherit;" }}
+                  >
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                  </svg>
+                </span>
+                Profile
+              </NavLink>
             </li>
             <li className="aside__list__link">
               <button onClick={onLogout} className="btn">
@@ -55,10 +124,46 @@ const Sidebar = () => {
         ) : (
           <ul className="aside__list">
             <li className="aside__list__link">
-              <NavLink to="/signin">Sign In</NavLink>
+              <NavLink to="/signin">
+                <span className="aside__list__link__icon">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    color="inherit"
+                    height="15px"
+                    width="15px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={{ color: "inherit;" }}
+                  >
+                    <path d="M312 155h91c2.8 0 5-2.2 5-5 0-8.9-3.9-17.3-10.7-22.9L321 63.5c-5.8-4.8-13-7.4-20.6-7.4-4.1 0-7.4 3.3-7.4 7.4V136c0 10.5 8.5 19 19 19z"></path>
+                    <path d="M267 136V56H136c-17.6 0-32 14.4-32 32v336c0 17.6 14.4 32 32 32h240c17.6 0 32-14.4 32-32V181h-96c-24.8 0-45-20.2-45-45z"></path>
+                  </svg>
+                </span>
+                Sign In
+              </NavLink>
             </li>
             <li className="aside__list__link">
-              <NavLink to="/signup">Sign Up</NavLink>
+              <NavLink to="/signup">
+                <span className="aside__list__link__icon">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    color="inherit"
+                    height="15px"
+                    width="15px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={{ color: "inherit;" }}
+                  >
+                    <path d="M477.64 38.26a4.75 4.75 0 00-3.55-3.66c-58.57-14.32-193.9 36.71-267.22 110a317 317 0 00-35.63 42.1c-22.61-2-45.22-.33-64.49 8.07C52.38 218.7 36.55 281.14 32.14 308a9.64 9.64 0 0010.55 11.2l87.31-9.63a194.1 194.1 0 001.19 19.7 19.53 19.53 0 005.7 12L170.7 375a19.59 19.59 0 0012 5.7 193.53 193.53 0 0019.59 1.19l-9.58 87.2a9.65 9.65 0 0011.2 10.55c26.81-4.3 89.36-20.13 113.15-74.5 8.4-19.27 10.12-41.77 8.18-64.27a317.66 317.66 0 0042.21-35.64C441 232.05 491.74 99.74 477.64 38.26zM294.07 217.93a48 48 0 1167.86 0 47.95 47.95 0 01-67.86 0z"></path>
+                    <path d="M168.4 399.43c-5.48 5.49-14.27 7.63-24.85 9.46-23.77 4.05-44.76-16.49-40.49-40.52 1.63-9.11 6.45-21.88 9.45-24.88a4.37 4.37 0 00-3.65-7.45 60 60 0 00-35.13 17.12C50.22 376.69 48 464 48 464s87.36-2.22 110.87-25.75A59.69 59.69 0 00176 403.09c.37-4.18-4.72-6.67-7.6-3.66z"></path>
+                  </svg>
+                </span>
+                Sign Up
+              </NavLink>
             </li>
           </ul>
         )}
