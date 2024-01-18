@@ -1,0 +1,88 @@
+.profileinformation {
+  margin-top: 30px;
+  &__container {
+    &__wrapper {
+      display: flex;
+      gap: 30px;
+    }
+  }
+}
+
+.welcome {
+  background-image: url(../../assets//profileBackground.webp);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__top {
+    > p {
+      margin-top: 10px;
+    }
+  }
+  &__bottom {
+    > p {
+      cursor: pointer;
+    }
+  }
+}
+
+.arrow {
+  position: relative;
+  top: 3px;
+  left: 5px;
+}
+
+.carinformation {
+  background-color: $box;
+  padding: 20px;
+  border-radius: 10px;
+  &__top {
+    > p {
+      color: $textSoft;
+    }
+  }
+  &__center {
+    position: relative;
+    margin-block: 20px;
+    &__text {
+      text-align: center;
+      position: absolute;
+      top: 30%;
+      left: 35%;
+      > h2 {
+        font-size: 2.5rem;
+      }
+      > p {
+        font-size: 14px;
+        color: $textSoft;
+      }
+    }
+    &__bottom {
+      text-align: center;
+      > p {
+        color: $textSoft;
+      }
+    }
+  }
+
+  &__bottom {
+    &__wrapper {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      &__box {
+        padding: 10px 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+        background-color: $bg;
+      }
+    }
+  }
+}

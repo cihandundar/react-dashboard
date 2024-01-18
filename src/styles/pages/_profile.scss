@@ -1,0 +1,43 @@
+.profile {
+  &__container {
+    &__header {
+      background-color: $box;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &__left {
+        display: flex;
+        align-items: center;
+        > img {
+          margin-right: 30px;
+          border-radius: 10px;
+        }
+      }
+      &__btn {
+        > button {
+          margin-right: 30px;
+          border: none;
+          color: $text;
+        }
+      }
+    }
+  }
+}
+
+.overview {
+  background-color: $bg;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.teams {
+  background-color: transparent;
+  border: none;
+}
+
+.projects {
+  background-color: transparent;
+  border: none;
+}
