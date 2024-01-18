@@ -7,6 +7,8 @@ import ProjectsTable from "./ProjectsTable";
 import AuthorsTable from "./AuthorsTable";
 import PaymentCard from "./PaymentCard";
 import Invoices from "./Invoices";
+import Information from "./Information";
+import Transaction from "./Transaction";
 import Footer from "./Footer";
 export {
   Navbar,
@@ -18,5 +20,7 @@ export {
   AuthorsTable,
   PaymentCard,
   Invoices,
+  Information,
+  Transaction,
   Footer,
 };

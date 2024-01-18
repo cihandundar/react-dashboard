@@ -1,4 +1,4 @@
-import { PaymentCard } from "components";
+import { Information, PaymentCard } from "components";
 import React from "react";
 
 const Billing = () => {
@@ -6,6 +6,7 @@ const Billing = () => {
     <div className="billing">
       <div className="billing__container">
         <PaymentCard />
+        <Information />
       </div>
     </div>
   );
