@@ -6,11 +6,42 @@
       gap: 30px;
     }
   }
+  &__bottom {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: $box;
+    &__title {
+      > h3 {
+        margin-bottom: 20px;
+      }
+      > p {
+        color: $textSoft;
+        margin-bottom: 90px;
+      }
+    }
+    &__center {
+      > p {
+        margin-top: 20px;
+      }
+    }
+    &__socialmedia {
+      margin-top: 20px;
+    }
+  }
+}
+
+.centerSoft {
+  color: $textSoft;
+}
+
+.socialmediaIcon {
+  margin-left: 15px;
 }
 
 .welcome {
   background-image: url(../../assets//profileBackground.webp);
-  width: 350px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,6 +71,7 @@
   background-color: $box;
   padding: 20px;
   border-radius: 10px;
+  width: 100%;
   &__top {
     > p {
       color: $textSoft;
@@ -47,12 +79,18 @@
   }
   &__center {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-block: 20px;
+    &__svg {
+      width: 200px;
+    }
     &__text {
       text-align: center;
       position: absolute;
-      top: 30%;
-      left: 35%;
+      top: 20%;
+      left: 40%;
       > h2 {
         font-size: 2.5rem;
       }
