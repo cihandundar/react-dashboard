@@ -9,6 +9,7 @@ import PaymentCard from "./PaymentCard";
 import Invoices from "./Invoices";
 import Information from "./Information";
 import Transaction from "./Transaction";
+import ProfileInformation from "./ProfileInformation";
 import Footer from "./Footer";
 export {
   Navbar,
@@ -22,5 +23,6 @@ export {
   Invoices,
   Information,
   Transaction,
+  ProfileInformation,
   Footer,
 };
