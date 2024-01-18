@@ -1,0 +1,41 @@
+.transfaction {
+  width: 100%;
+  background-color: $box;
+  padding: 20px;
+  border-radius: 10px;
+
+  &__container {
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      > p {
+        color: $textSoft;
+      }
+    }
+  }
+  &__wrapper {
+    &__title {
+      margin-top: 20px;
+    }
+    &__box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $bg;
+      padding: 20px;
+      margin-top: 10px;
+      border-radius: 10px;
+      font-size: 14px;
+      &__left {
+        > p {
+          color: $textSoft;
+        }
+      }
+    }
+  }
+}
+
+.historyIcon {
+  margin-right: 10px;
+}

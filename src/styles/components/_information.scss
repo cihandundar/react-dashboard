@@ -1,0 +1,55 @@
+.information {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+  &__container {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: $box;
+    &__box {
+      margin-top: 20px;
+      background-color: $bg;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      &__left {
+        &__text {
+          line-height: 1.7;
+          font-size: 14px;
+          color: $textSoft;
+          margin-top: 10px;
+        }
+      }
+      &__right {
+        &__btn {
+          > button {
+            padding: 10px 20px;
+            background-color: transparent;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.delete {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btnIcon {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.edit {
+  cursor: pointer;
+  color: $textSoft;
+  font-weight: bold;
+  text-transform: uppercase;
+}
