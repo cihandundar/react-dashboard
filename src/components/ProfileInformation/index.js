@@ -6,6 +6,7 @@ import light from "../../assets/light.svg";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa6";
+import Projects from "components/Projects";
 const ProfileInformation = () => {
   return (
     <div className="profileinformation">
@@ -157,6 +158,7 @@ const ProfileInformation = () => {
             </div>
           </div>
         </div>
+        <Projects />
       </div>
     </div>
   );
