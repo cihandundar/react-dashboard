@@ -34,6 +34,11 @@ const Transaction = () => {
       history: "27 March 2020,at 05:00 AM",
     },
   ];
+
+  const getColor = (price) => {
+    return price < 0 ? "red" : "green";
+  };
+
   return (
     <div className="transfaction">
       <div className="transfaction__container">
@@ -59,7 +64,10 @@ const Transaction = () => {
                 <h4>{transactionItem.title}</h4>
                 <p>{transactionItem.history}</p>
               </div>
-              <div className="transfaction__wrapper__box__right">
+              <div
+                className="transfaction__wrapper__box__right"
+                style={{ color: getColor(transactionItem.price) }}
+              >
                 <p>{transactionItem.price} $</p>
               </div>
             </div>
