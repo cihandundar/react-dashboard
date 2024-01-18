@@ -10,6 +10,7 @@ import Invoices from "./Invoices";
 import Information from "./Information";
 import Transaction from "./Transaction";
 import ProfileInformation from "./ProfileInformation";
+import Projects from "./Projects";
 import Footer from "./Footer";
 export {
   Navbar,
@@ -24,5 +25,6 @@ export {
   Information,
   Transaction,
   ProfileInformation,
+  Projects,
   Footer,
 };
