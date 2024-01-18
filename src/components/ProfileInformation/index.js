@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import greenIcon from "../../assets/greenIcon.svg";
 import car from "../../assets/car.svg";
+import light from "../../assets/light.svg";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa6";
@@ -104,7 +105,7 @@ const ProfileInformation = () => {
                     <h3>76%</h3>
                   </div>
                   <div className="carinformation__bottom__wrapper__box__right">
-                    <img src={car} alt="" />
+                    <img src={light} alt="" />
                   </div>
                 </div>
                 <div className="carinformation__bottom__wrapper__box">
@@ -116,8 +117,8 @@ const ProfileInformation = () => {
               </div>
             </div>
           </div>
-          <div className="profileinformation__bottom">
-            <div className="profileinformation__bottom__title">
+          <div className="profileinfo">
+            <div className="profileinfo__title">
               <h3>Profile Information</h3>
               <p>
                 Hi, I’m Mark Johnson, Decisions: If you can’t decide, the answer
@@ -126,7 +127,7 @@ const ProfileInformation = () => {
                 illusion of equality).
               </p>
             </div>
-            <div className="profileinformation__bottom__center">
+            <div className="profileinfo__center">
               <p>
                 <span className="centerSoft">Full Name: </span>Mark Johnson
               </p>
@@ -139,7 +140,7 @@ const ProfileInformation = () => {
               <p>
                 <span className="centerSoft">Location:</span> United States
               </p>
-              <div className="profileinformation__bottom__socialmedia">
+              <div className="profileinfo__socialmedia">
                 <p>
                   <span className="centerSoft">Social:</span>
                   <span className="socialmediaIcon">
