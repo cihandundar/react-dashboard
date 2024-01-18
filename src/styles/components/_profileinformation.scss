@@ -6,29 +6,6 @@
       gap: 30px;
     }
   }
-  &__bottom {
-    width: 100%;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: $box;
-    &__title {
-      > h3 {
-        margin-bottom: 20px;
-      }
-      > p {
-        color: $textSoft;
-        margin-bottom: 90px;
-      }
-    }
-    &__center {
-      > p {
-        margin-top: 20px;
-      }
-    }
-    &__socialmedia {
-      margin-top: 20px;
-    }
-  }
 }
 
 .centerSoft {
@@ -120,7 +97,36 @@
         margin-top: 10px;
         width: 100%;
         background-color: $bg;
+        &__right {
+          > img {
+            margin-left: 5px;
+          }
+        }
       }
     }
+  }
+}
+
+.profileinfo {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: $box;
+  &__title {
+    > h3 {
+      margin-bottom: 20px;
+    }
+    > p {
+      color: $textSoft;
+      margin-bottom: 90px;
+    }
+  }
+  &__center {
+    > p {
+      margin-top: 20px;
+    }
+  }
+  &__socialmedia {
+    margin-top: 20px;
   }
 }
