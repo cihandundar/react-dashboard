@@ -1,0 +1,27 @@
+.projects {
+  margin-top: 30px;
+  &__container {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: $box;
+    &__wrapper {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    &__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border-radius: 10px;
+      background-color: $bg;
+      &__img {
+        > img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
