@@ -32,6 +32,9 @@ body {
 
 .container {
   display: flex;
+  @include breakpoint(sm) {
+    display: block;
+  }
 }
 
 .wrapper {
