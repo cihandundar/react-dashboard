@@ -38,6 +38,9 @@
       margin-bottom: 15px;
       color: $text;
       outline: none;
+      @include breakpoint(xs) {
+        width: 300px;
+      }
     }
 
     > button {
