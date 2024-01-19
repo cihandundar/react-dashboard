@@ -3,12 +3,17 @@
   background-color: $box;
   padding: 20px;
   border-radius: 10px;
-
+  @include breakpoint(md) {
+    text-align: center;
+  }
   &__container {
     &__title {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @include breakpoint(md) {
+        flex-direction: column;
+      }
       > p {
         color: $textSoft;
       }
@@ -27,6 +32,9 @@
       margin-top: 10px;
       border-radius: 10px;
       font-size: 14px;
+      @include breakpoint(md) {
+        text-align: left;
+      }
       &__left {
         > p {
           color: $textSoft;

@@ -5,6 +5,9 @@
   width: 100%;
   border-radius: 10px;
   margin-bottom: 30px;
+  @include breakpoint(xs) {
+    display: none;
+  }
   &__container {
     display: flex;
     justify-content: flex-end;

@@ -8,8 +8,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include breakpoint(xs) {
+      flex-direction: column;
+    }
   }
   &__right {
+    @include breakpoint(xs) {
+      margin-top: 10px;
+    }
     &__list {
       display: flex;
       > li:not(:last-child) {

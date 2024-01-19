@@ -5,6 +5,10 @@
   border-radius: 10px;
   font-size: 14px;
   height: 415px;
+  @include breakpoint(md) {
+    width: 100%;
+    height: 100%;
+  }
   &__container {
     &__title {
       display: flex;
@@ -41,4 +45,10 @@
 
 .textSoft {
   color: $textSoft;
+}
+
+.invoices-mobile {
+  @include breakpoint(md) {
+    width: 100%;
+  }
 }

@@ -7,6 +7,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @include breakpoint(sm) {
+        flex-direction: column;
+      }
       &__left {
         display: flex;
         align-items: center;

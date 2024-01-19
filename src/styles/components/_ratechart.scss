@@ -4,6 +4,23 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    @include breakpoint(l) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    @include breakpoint(l) {
+      width: 100%;
+      gap: 30px;
+      display: flex;
+    }
+    @include breakpoint(sm) {
+      flex-direction: column;
+    }
   }
 }
 

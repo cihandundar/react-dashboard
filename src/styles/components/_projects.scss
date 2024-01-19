@@ -9,6 +9,9 @@
       margin-top: 20px;
       display: flex;
       gap: 10px;
+      @include breakpoint(sm) {
+        flex-direction: column;
+      }
     }
   }
   &__box {

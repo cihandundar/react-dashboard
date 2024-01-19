@@ -1,6 +1,9 @@
 .payment {
   display: flex;
   gap: 30px;
+  @include breakpoint(md) {
+    flex-direction: column;
+  }
   &__container {
     display: flex;
     flex-direction: column;
@@ -9,6 +12,9 @@
     &__wrapper {
       display: flex;
       gap: 30px;
+      @include breakpoint(md) {
+        flex-direction: column;
+      }
     }
     &__vision {
       width: 100%;

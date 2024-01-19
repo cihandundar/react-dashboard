@@ -6,4 +6,11 @@
   background-color: $box;
   border-radius: 10px;
   justify-content: space-around;
+  @include breakpoint(md) {
+    flex-direction: column;
+  }
+}
+
+.recharts-wrapper {
+  width: 100% !important;
 }

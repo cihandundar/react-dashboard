@@ -4,6 +4,9 @@
     &__wrapper {
       display: flex;
       gap: 30px;
+      @include breakpoint(sm) {
+        flex-wrap: wrap;
+      }
     }
   }
 }
@@ -49,6 +52,9 @@
   padding: 20px;
   border-radius: 10px;
   width: 100%;
+  @include breakpoint(sm) {
+    text-align: center;
+  }
   &__top {
     > p {
       color: $textSoft;
@@ -97,6 +103,9 @@
         margin-top: 10px;
         width: 100%;
         background-color: $bg;
+        @include breakpoint(sm) {
+          justify-content: space-between;
+        }
         &__right {
           > img {
             margin-left: 5px;

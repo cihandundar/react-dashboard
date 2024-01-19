@@ -2,6 +2,9 @@
   margin-top: 30px;
   display: flex;
   gap: 30px;
+  @include breakpoint(md) {
+    flex-direction: column;
+  }
   &__container {
     width: 100%;
     padding: 20px;
@@ -14,6 +17,9 @@
       border-radius: 10px;
       display: flex;
       justify-content: space-between;
+      @include breakpoint(xs) {
+        flex-direction: column;
+      }
       &__left {
         &__text {
           line-height: 1.7;
