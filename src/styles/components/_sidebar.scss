@@ -52,6 +52,9 @@
       position: relative;
       left: 20px;
     }
+    @include breakpoint(xss) {
+      top: 20px;
+    }
   }
 
   &__closebtn {
