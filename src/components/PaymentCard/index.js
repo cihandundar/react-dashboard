@@ -171,7 +171,7 @@ const PaymentCard = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="invoices-mobile">
         <Invoices />
       </div>
     </div>

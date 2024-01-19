@@ -31,6 +31,8 @@
   }
   @include breakpoint(xss) {
     width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
   &__btn {
     display: none;
