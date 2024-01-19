@@ -57,17 +57,7 @@ const data = [
 const Chart = () => {
   return (
     <div className="chart">
-      <AreaChart
-        width={600}
-        height={400}
-        data={data}
-        margin={{
-          top: 10,
-          right: 30,
-          left: 0,
-          bottom: 0,
-        }}
-      >
+      <AreaChart width={600} height={400} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />
@@ -95,17 +85,7 @@ const Chart = () => {
         />
       </AreaChart>
 
-      <BarChart
-        width={600}
-        height={400}
-        data={data}
-        margin={{
-          top: 20,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
+      <BarChart width={600} height={400} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />
