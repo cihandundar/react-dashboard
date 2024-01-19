@@ -1,3 +1,25 @@
+.table {
+  overflow: auto;
+}
+
+.table__container {
+  width: 100%;
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  white-space: nowrap;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
 .tableTitle {
   display: flex;
   align-items: center;
@@ -6,10 +28,10 @@
 .tableWrapper {
   display: flex;
   flex-direction: column;
-  > p {
-    color: $textSoft;
-    font-size: 13px;
-  }
+}
+
+.tableWrapper > div {
+  margin-bottom: 5px;
 }
 
 .tableAvatar img {
@@ -18,10 +40,6 @@
   margin-right: 10px;
 }
 
-.tbodyWrapper {
-  > tr {
-    > td {
-      font-size: 14px;
-    }
-  }
+.tbodyWrapper tr td {
+  font-size: 14px;
 }
