@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 const AuthorsTable = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [error, setError] = useState("");
   const items = useSelector((state) => state?.items?.item);
   const dispatch = useDispatch();
 
@@ -11,10 +12,15 @@ const AuthorsTable = () => {
   }, [dispatch]);
 
   const handleSearch = () => {
-    if (searchTerm) {
-      dispatch(searchUser(searchTerm));
+    if (searchTerm && !/^[a-zA-Z]+$/.test(searchTerm)) {
+      setError("Invalid search term. Please use only letters.");
     } else {
-      dispatch(fetchUser());
+      setError("");
+      if (searchTerm) {
+        dispatch(searchUser(searchTerm));
+      } else {
+        dispatch(fetchUser());
+      }
     }
   };
 
@@ -28,6 +34,7 @@ const AuthorsTable = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         <button onClick={handleSearch}>Search</button>
+        {error && <p style={{ color: "red" }}>{error}</p>}
       </div>
       <div className="table__container">
         <table border="1" style={{ borderCollapse: "collapse", width: "100%" }}>
