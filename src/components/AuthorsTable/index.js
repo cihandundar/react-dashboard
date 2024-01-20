@@ -1,7 +1,8 @@
-import { fetchUser } from "features/users/userSlice";
-import React, { useEffect } from "react";
+import { fetchUser, searchUser } from "features/users/userSlice";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 const AuthorsTable = () => {
+  const [searchTerm, setSearchTerm] = useState("");
   const items = useSelector((state) => state?.items?.item);
   const dispatch = useDispatch();
 
@@ -9,8 +10,25 @@ const AuthorsTable = () => {
     dispatch(fetchUser());
   }, [dispatch]);
 
+  const handleSearch = () => {
+    if (searchTerm) {
+      dispatch(searchUser(searchTerm));
+    } else {
+      dispatch(fetchUser());
+    }
+  };
+
   return (
     <div className="table">
+      <div className="table__filter">
+        <input
+          type="text"
+          placeholder="Search..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <button onClick={handleSearch}>Search</button>
+      </div>
       <div className="table__container">
         <table border="1" style={{ borderCollapse: "collapse", width: "100%" }}>
           <thead>

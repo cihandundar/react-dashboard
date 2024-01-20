@@ -1,5 +1,25 @@
 .table {
   overflow: auto;
+  &__filter {
+    margin-bottom: 20px;
+    > input {
+      width: 200px;
+      padding: 10px 20px;
+      border: 1px solid grey;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      outline: none;
+    }
+    > button {
+      padding: 10px 20px;
+      background-color: $bg;
+      color: $text;
+      border: 1px solid grey;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      cursor: pointer;
+    }
+  }
 }
 
 .table__container {
