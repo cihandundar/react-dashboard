@@ -12,15 +12,20 @@ const AuthorsTable = () => {
   }, [dispatch]);
 
   const handleSearch = () => {
-    if (searchTerm && !/^[a-zA-Z]+$/.test(searchTerm)) {
-      setError("Invalid search term. Please use only letters.");
+    if (searchTerm) {
+      const foundUser = items.find((userItem) =>
+        userItem?.name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+
+      if (!foundUser) {
+        setError(`No user found with the name: ${searchTerm}`);
+      } else {
+        setError("");
+        dispatch(searchUser(searchTerm));
+      }
     } else {
       setError("");
-      if (searchTerm) {
-        dispatch(searchUser(searchTerm));
-      } else {
-        dispatch(fetchUser());
-      }
+      dispatch(fetchUser());
     }
   };
 
